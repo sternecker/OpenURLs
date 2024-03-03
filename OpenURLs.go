@@ -1,5 +1,6 @@
-// The script assumes you are running Chrome.
+// The script assumes you are running Firefox.
 // The script presents an options menu and opens browser tabs based on selection.
+
 package main
 
 import (
@@ -10,8 +11,7 @@ import (
 )
 
 func launch(list ...string) {
-	//chrome := "google-chrome"
-	chrome := "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
+	chrome := "firefox"
 
 	for _, element := range list {
 		cmd := exec.Command(chrome, "--chrome-frame", "%s", element)
