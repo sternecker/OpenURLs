@@ -27,6 +27,10 @@ func main() {
 	valid := true
 	for valid {
 
+		// Education Sites
+		education := []string{
+			"https://www.pluralsight.com"}
+
 		//Tools sites
 		tools := []string{
 			"https://urlscan.io/",
@@ -59,6 +63,7 @@ func main() {
 		println("1: Press '1' for Tools.")
 		println("2: Press '2' for News.")
 		println("3: Press '3' for Blogs.")
+		println("4: Press '4' for Education.")
 		println("Q: Press 'Q' to quit.")
 		println("")
 		println("Please make a selection: ")
@@ -82,6 +87,10 @@ func main() {
 			c.Run()
 			fmt.Println("You chose Blogs")
 			launch(blogs...)
+		case '4':
+			c.Run()
+			fmt.Println("You chose Education")
+			launch(education...)
 		case 'q':
 			valid = false
 			break
