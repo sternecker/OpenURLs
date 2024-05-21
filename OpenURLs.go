@@ -30,7 +30,10 @@ func main() {
 		// Education Sites
 		education := []string{
 			"https://www.pluralsight.com",
-			"https://www.masterclass.com"}
+			"https://www.masterclass.com",
+			"https://www.kaggle.com",
+			"https://learn.acloud.guru",
+			"https://www.linkedin.com/learning/"}
 
 		//Tools sites
 		tools := []string{
